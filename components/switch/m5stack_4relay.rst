@@ -1,4 +1,4 @@
-.. _m5stack4relay_switch:
+.. _m5stack_4relay_switch:
 
 M5Stack 4 Relay Switch Component
 ================================
@@ -17,16 +17,16 @@ The relays can be used to switch up to AC-230V or DC-28V. For more information: 
 .. code-block:: yaml
 
     # Example configuration entry
-    m5stack4relay:
+    m5stack_4relay:
         id: M5stackrelay_ID1
         # ...
 
     switch:
-      - platform: m5stack4relay
+      - platform: m5stack_4relay
         id: relay_1
         name: relay1
         channel: 1
-        m5stack4relay_id: M5stackrelay_ID1
+        m5stack_4relay_id: M5stackrelay_ID1
 
 Configuration variables:
 ------------------------
@@ -35,7 +35,7 @@ The control has all other options from the I2C devices.
 **Switch**
 
 - **channel** (*Required*, integer): The channel number to switch, options are 1, 2, 3 or 4.
-- **m5stack4relay_id** (*Optional*, :ref:`config-id`): The ID of the M5Stack 4 relay.
+- **m5stack_4relay_id** (*Optional*, :ref:`config-id`): The ID of the M5Stack 4 relay.
 - **interlock** (*Optional*, list): A list of other switches in an interlock group. See
   :ref:`switch-gpio-interlocking`.
 - **interlock_wait_time** (*Optional*, :ref:`config-time`): For interlocking mode, set how long
@@ -50,6 +50,6 @@ See Also
 --------
 
 - :doc:`index`
-- :apiref:`m5stack4relay/switch/m5stack4relay_switch.h`
+- :apiref:`m5stack4relay/switch/m5stack_4relay_switch.h`
 - :apiref:`gpio/switch/gpio_switch.h`
 - :ghedit:`Edit`
